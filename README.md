@@ -24,7 +24,7 @@ This website is built using:
 
 ## How to Access
 
-Visit the website here: [https://dogutierrez.github.io/DorisGutierrezR/]([https://DorisGutierrezR.github.io](https://dogutierrez.github.io/DorisGutierrezR/))
+Visit the website here:[https://dogutierrez.github.io/DorisGutierrezR/](https://dogutierrez.github.io/DorisGutierrezR/)
 
 [https://DorisGutierrezR.github.io](https://DorisGutierrezR.github.io)
 
