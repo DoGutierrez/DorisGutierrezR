@@ -1,4 +1,4 @@
-# DorisGutierrezR My Personal Website
+# Doris E. Gutierrez R. My Personal Website
 
 Welcome to my personal website! This site is hosted on GitHub Pages and serves as a portfolio showcasing my work, projects, and background.
 
