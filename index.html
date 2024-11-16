@@ -1,14 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doris E. Gutiérrez Rosales </title>
+    <title>Perfil de Doris E. Gutiérrez Rosales</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1> <strong> Doris E. Gutiérrez Rosales </strong></h1>
-    <p>Computer Science Ph.D. Student at <a href="https://www.cs.stonybrook.edu/">Stonybrook University</a>.</p>
-    <p>Hello! My name is Saumya Gupta. I am currently pursuing my PhD in Computer Science at Stony Brook University, 
-        where I am advised by <a href="https://www3.cs.stonybrook.edu/~ari/">Professor Arie Kaufman</a>.</p>
+    <!-- Barra de Navegación -->
+    <header>
+        <nav>
+            <span class="nav-name hidden">Doris E. Gutiérrez Rosales</span>
+            <button class="btn selected" onclick="showSection('about', this)">Profile</button>
+            <!--<button class="btn" onclick="showSection('publications', this)">Publications</button>-->
+            <button class="btn" onclick="showSection('cv', this)">CV</button>
+            <!--<button class="btn"><a href="#settings">⚙️</a></button>-->
+        </nav>
+    </header>
+
+    <!-- Secciones de Contenido -->
+    <main>
+        <section id="about" class="content-section">
+            <!-- Nombre que ocupa toda la primera fila -->
+            <div class="profile-name">Doris E. Gutiérrez Rosales</div>
+            
+            <!-- Información del perfil en la segunda fila, primera columna -->
+            <div class="profile-info">
+                <p>Computer Science Ph.D. Student at <a href="https://www.stonybrook.edu" target="_blank">Stony Brook University</a>.</p>
+                <br><p>Hello! My name is Doris E. Gutiérrez Rosales. I am currently pursuing my PhD in Computer Science at Stony Brook 
+                    University, where I am advised by Professor <a href="https://www.stonybrook.edu" target="_blank">Arie Kaufman</a>.</p>
+                    <br><p>My research interests are in the areas of Extended Reality, Human-Computer Interaction, and Data Visualization.</p>
+            </div>
+            
+            <!-- Imagen de perfil en la segunda fila, segunda columna -->
+            <div class="profile-image">
+                <img src="assets/images/profile.png" alt="Doris E. Gutiérrez Rosales">
+            </div>
+            <div class="contact-icons-container">
+                <div class="contact-icons">
+                    <a href="mailto:dogutierrez@cs.stonybrook.edu" class="icon" title="Email">
+                        <img src="assets/icons/email-icon.png" alt="Email Icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/doris-gutierrez-656150105/?locale=en_US" target="_blank" class="icon" title="LinkedIn">
+                        <img src="assets/icons/linkedin-icon.png" alt="LinkedIn Icon">
+                    </a>
+                </div>
+                <p class="contact-note">Best reached via email.</p>
+            </div>
+            
+        </section>
+        
+    <section id="cv" class="content-section hidden">
+    <h2>CV</h2>
+
+    <!-- Botón para descargar PDF -->
+    <div class="pdf-button">
+        <a href="assets/pdf/CV.pdf" target="_blank" title="Download CV">
+            <img src="assets/icons/pdf-icon.png" alt="PDF" />
+        </a>
+    </div>
+
+    <!-- Información General -->
+    <div class="cv-section">
+        <h3>General Information</h3>
+        <p><strong>Full Name</strong>: Doris Elena Gutiérrez Rosales</p>
+        <p><strong>Languages</strong>: English (Proficient), Spanish (Native)</p>
+    </div>
+
+    <!-- Educación -->
+    <div class="cv-section">
+        <h3>Education</h3>
+        <div class="cv-entry">
+            <div class="label">2021 - PRESENT</div>
+            <div class="content">PhD Computer Science (ongoing) - Stony Brook University, New York, USA</div>
+        </div>
+        <hr>
+        <div class="cv-entry">
+            <div class="label">2020</div>
+            <div class="content">Master’s Degree in Higher Education with Specialization in Technology and Educational Didactics - Technological University of Panama</div>
+        </div>
+        <hr>
+        <div class="cv-entry">
+            <div class="label">2014</div>
+            <div class="content">Master of Science in Information Technology and Communications - Technological University of Panama</div>
+        </div>
+        <hr>
+        <div class="cv-entry">
+            <div class="label">2010</div>
+            <div class="content">B.S. Computer Science - Technological University of Panama</div>
+        </div>
+    </div>
+    
+
+    <!-- Experiencia -->
+    <div class="cv-section">
+        <h3>Experience</h3>
+        
+        <div class="cv-entry">
+            <div class="label">2022 - 2023, 2024</div>
+            <div class="content">Teaching Assistant, Stony Brook University</div>
+        </div>
+        <hr>
+        
+        <div class="cv-entry">
+            <div class="label">2015 - 2020</div>
+            <div class="content">Full-Time Professor - Technological University of Panama</div>
+        </div>
+        <hr>
+        
+        <div class="cv-entry">
+            <div class="label">2013 - 2014</div>
+            <div class="content">Assistant Computer Resources Support - Technological University of Panama</div>
+        </div>
+        
+    </div>
+    
+
+    <div class="cv-section">
+        <h3>Honors and Awards</h3>
+        
+        <div class="cv-entry">
+            <div class="label">2020</div>
+            <div class="content">Fulbright-Laspau, Laspau -  Scholarship for doctoral studies</div>
+        </div>
+        <hr>
+        
+        <div class="cv-entry">
+            <div class="label">2011</div>
+            <div class="content">National Secretary of Science and Technology - Scholarship for M.S. in Information Technology and Communications</div>
+        </div>
+      
+    </div>
+    
+
+    <!-- Intereses Académicos -->
+    <div class="cv-section">
+        <h3>Academic Interests</h3>
+        <ul class="no-bullets">
+            <li class="no-bullets">Extended Reality <hr></li>
+            <li class="no-bullets">Human-Computer Interaction<hr></li>
+            <li class="no-bullets">Digital animation<hr></li>
+            <li class="no-bullets">Modeling (Computer Graphics)<hr></li>
+            <li class="no-bullets">Data Visualization<hr></li>
+        </ul>
+    </div>
+
+    <!-- Otros Intereses -->
+    <div class="cv-section">
+        <h3>Other Interests</h3>
+        <p>Playing Guitar</p>
+    </div>
+</section>
+
+        
+    </main>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
