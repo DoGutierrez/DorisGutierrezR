@@ -1,0 +1,369 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #1a1a1a;
+    padding: 1em;
+    border-bottom: 1px solid #333333;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 27%;
+    gap: 1em;
+}
+
+.nav-name {
+    font-weight: bold;
+    color: #6f479f; /* Color morado */
+    font-size: 1.2em;
+    margin-right: auto; /* Empuja los botones hacia la derecha */
+    padding-left: 1em;
+}
+
+/* Button Styles */
+.btn {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 2px;;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #6f479f; /* #09b004;#ff8800; #00aaff;*/
+    color: #ffffff;
+    /*color:#ff8800;*/
+}
+
+.selected {
+    background-color: #6f479f;/*#00aaff;*/
+    color: #ffffff;
+}
+
+/* Profile Section */
+.content-section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+.profile h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+}
+
+.profile hr {
+    border: none;
+    border-top: 1px solid #333333;
+    margin: 0.5em 0 1em;
+}
+
+.profile a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.profile a:hover {
+    text-decoration: underline;
+}
+/* Contenedor de la sección de perfil */
+#about {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 20% 80%;
+    gap: 1em;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em;
+    align-items: start;
+}
+/* Estilo para el nombre que abarca las dos columnas en la primera fila */
+.profile-name {
+    grid-column: 1 / span 2; /* Ocupa ambas columnas */
+    grid-row: 1; /* Primera fila */
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff;
+    border-bottom: 1px solid #ccc; /* Borde debajo del nombre */
+    padding-bottom: 0.5em;
+}
+
+/* Sección de texto */
+.profile-info {
+    grid-column: 1; /* Columna 1 */
+    grid-row: 2; /* Segunda fila */
+    /*border-right: 1px solid #ccc;  Borde derecho entre texto e imagen */
+    padding-right: 1em;
+    padding-top: 2em;
+}
+
+/* Estilo de la imagen de perfil */
+.profile-image {
+    grid-column: 2; /* Columna 2 */
+    grid-row: 2; /* Segunda fila */
+    width: 200px;
+    height: 200px;
+    /*max-width: 250px;  Limita el ancho de la imagen */
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 2em;
+     /* Espacio a la izquierda para separarla del borde */
+}
+
+/* Ajuste para la imagen dentro del contenedor redondeado */
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    #about {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+        grid-template-rows: auto; /* Filas automáticas */
+        text-align: center;
+    }
+
+    .profile-name {
+        grid-column: 1;
+        border-bottom: none;
+    }
+
+    .profile-image {
+        grid-row: 2; /* Asegura que la imagen aparece primero */
+        grid-column: 1; /* Asegura que ocupa toda la columna */
+        margin: 0 auto; /* Centra la imagen */
+        margin-bottom: 1em; /* Espacio debajo de la imagen */
+        max-width: 150px;
+    }
+
+    .profile-info {
+        grid-row: 3; /* Mueve el texto debajo de la imagen */
+        grid-column: 1;
+        border-right: none;
+        padding-right: 0;
+    }
+}
+
+
+
+/* Cambia el color de los enlaces */
+a {
+    color: #ff8800cc;/*#6f479f; #00aaff; Color predeterminado del enlace */
+    text-decoration: none; /* Remueve el subrayado por defecto */
+}
+
+/* Cambia el color cuando se pasa el mouse sobre el enlace */
+a:hover {
+    color: #ff8800cc; /*#6f479f; /*#09b004; Color cuando el usuario pasa el mouse */
+    text-decoration: underline; /* Agrega un subrayado */
+}
+
+/* Cambia el color de los enlaces visitados */
+a:visited {
+    color: #660099; /* Color de enlaces visitados */
+}
+
+/* Cambia el color del enlace cuando está activo (al hacer clic) */
+a:active {
+    color: #ff0000; /* Color del enlace cuando se hace clic */
+}
+
+#change-color{
+    background-color: none !important;
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+
+/* Sección de CV */
+#cv {
+    position: relative;
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    color: #ffffff;
+    line-height: 3; /* Aumenta el espaciado entre líneas */
+}
+
+/* Botón PDF */
+.pdf-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.pdf-button a img {
+    width: 60px;
+    height: 60px;
+    background-color: #1e1e1e;  /* Color morado definido */
+    padding: 5px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.pdf-button a img:hover {
+    width: 60px;
+    height: 60px;
+    background-color:#6f479f; /* Color morado definido */
+    padding: 5px;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+/* Secciones de CV */
+.cv-section {
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+}
+
+.cv-section h3 {
+    font-size: 1.5em;
+    /*margin-bottom: 0.3em;*/
+    color: #ffffff;
+}
+
+/* Flexbox para alinear label y contenido */
+.cv-entry {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+
+/* Línea horizontal entre secciones */
+.cv-section:not(:last-child) {
+    border-bottom: 1px solid #444444; /* Línea de separación entre secciones */
+    padding-bottom: 1em;
+}
+/* Estilo para etiquetas de años */
+.label {
+    width: 170px; /* Ancho fijo para alinear los labels */
+    background-color: #6f479f;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.76em;
+}
+
+/* Estilo del contenido */
+.content {
+    flex: 1;
+    text-align: left;
+    line-height: 1.5;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido dentro de .content */
+}
+
+/* Listas de Experiencia */
+.cv-section ul {
+    margin-top: 0.5em;
+    padding-left: 1.5em;
+    list-style-type: disc;
+}
+
+.cv-section ul li {
+    margin-bottom: 0.5em;
+}
+
+/* Estilo del <hr> */
+.cv-section hr {
+    width: 98%; /* Ajusta el ancho de la línea */   
+    border: 0.5px solid #ffffff; /* Color y grosor de la línea */
+    opacity: 0.07; /* Opacidad para que se vea más suave */
+}
+
+/* Links en el nombre de la barra de navegación */
+header .nav-name {
+    font-weight: bold;
+    color: #ffffff; /* Color morado */
+    font-size: 1.2em;
+    margin-left: 37%;
+}
+
+#courses{
+    margin-left: 130px;
+}
+
+.no-bullets {
+    list-style-type: none; /* Elimina las viñetas */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margen */
+    font-style: italic;
+}
+
+.no-bullets li {
+    line-height: 2.5; /* Ajusta el espacio entre líneas */
+    padding-bottom: 0.5em; /* Espacio debajo de cada elemento */
+    
+}
+.no-bullets li hr {
+    width: 95%; /* Ajusta el ancho de la línea */
+    opacity: 0.07; /* Controla la opacidad de la línea */
+    border: 0.5px solid #ffffff; /* Color y grosor de la línea */
+    margin: 0.5em 0; /* Espacio vertical alrededor de la línea */
+}
+.contact-icons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 2em;
+}
+
+.icon img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.icon img:hover {
+    transform: scale(1.1);
+}
+
+.contact-note {
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 1em;
+    color: #ffffff;
+}
