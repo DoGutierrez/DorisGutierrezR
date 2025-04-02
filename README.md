@@ -26,7 +26,6 @@ This website is built using:
 
 Visit the website here:[https://dogutierrez.github.io/DorisGutierrezR/](https://dogutierrez.github.io/DorisGutierrezR/)
 
-[https://DorisGutierrezR.github.io](https://DorisGutierrezR.github.io)
 
 ## How It Works
 
