@@ -287,7 +287,6 @@ a:active {
     display: flex;
     align-items: flex-start;
     margin-block: 1.5em;
-    
 }
 
 .label_P {
@@ -323,9 +322,7 @@ a:active {
 
 .pub_content {
     flex: 1;
-    text-align: left;
-    
-    
+    text-align: left;    
 }
 
 
