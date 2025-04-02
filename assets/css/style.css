@@ -282,6 +282,53 @@ a:active {
     font-size: 0.76em;
 }
 
+
+.pub-entry {
+    display: flex;
+    align-items: flex-start;
+    margin-block: 1.5em;
+    
+}
+
+.label_P {
+    width: 170px; /* Ancho fijo para alinear los labels */
+    background-color: #6f479f;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.76em;
+    margin-block: 2em;
+    height: 50px;
+}
+
+.pub_title {
+    font-size: 1.2em; /* or larger if needed */
+    font-weight: bold;
+}
+
+.authors {
+    font-size: 0.9em; /* slightly smaller than title */
+    margin-top: 0.3em;
+}
+
+.note {
+    font-size: 0.8em; /* smaller than authors */
+    color: #666;
+    margin-top: 0.2em;
+}
+
+.pub_content {
+    flex: 1;
+    text-align: left;
+    
+    
+}
+
+
 /* Estilo del contenido */
 .content {
     flex: 1;
