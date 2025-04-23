@@ -7,13 +7,13 @@ Welcome to my personal website! This site is hosted on GitHub Pages and serves a
 I am currently a PhD student in Computer Science at Stony Brook University, specializing in Extended Reality (VR, MR, AR), specifically the Human-Computer 
 Interaction aspect. I am on study leave from my full-time position as a Professor at the Technological University of Panama, where I have taught and conducted 
 research in areas such as computer programming, data structures, artificial intelligence, computer graphics, Digital Animation and Videogames, 
-Formal Languages Automata and Compilers, among others.
+Formal Languages, Automata and Compilers, among others.
 
 ## Features
 
-- **Portfolio**: Highlights of my projects.
 - **Resume**: A downloadable copy of my CV.
 - **Contact Information**: Links to my email
+- **Publications**: List of my publications 
 
 ## Technologies Used
 
