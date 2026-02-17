@@ -287,6 +287,10 @@ a:active {
     display: flex;
     align-items: flex-start;
     margin-block: 1.5em;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 7000355 (Add paper link and update assets)
 }
 
 .label_P {
@@ -322,7 +326,13 @@ a:active {
 
 .pub_content {
     flex: 1;
+<<<<<<< HEAD
     text-align: left;    
+=======
+    text-align: left;
+    
+    
+>>>>>>> 7000355 (Add paper link and update assets)
 }
 
 
